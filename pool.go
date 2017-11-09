@@ -13,7 +13,7 @@ var (
 	pool sync.Map // map[serviceName]connPool
 )
 
-// ServiceArg
+// ServiceArg is that specified gRPC service configuration
 type ServiceArg struct {
 	Service string
 	Target  string // address:port, e.g: 127.0.0.1:8088
@@ -70,6 +70,7 @@ func Len(ctx context.Context, service string) int {
 	return 0
 }
 
+// Close the gRPC pool totally
 func Close(ctx context.Context) {
 	pool.Range(func(key, value interface{}) bool {
 		connPool, ok := value.(*connPool)
