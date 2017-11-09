@@ -1,4 +1,4 @@
-# GrpcPool
+# gRPC Connection Pool
 [![Build Status](https://travis-ci.org/wuxinwei/grpcpool.svg?branch=v1.0.2)](https://travis-ci.org/wuxinwei/grpcpool)
 [![Go Report Card](https://goreportcard.com/badge/github.com/wuxinwei/grpcpool)](https://goreportcard.com/report/github.com/wuxinwei/grpcpool)
 
