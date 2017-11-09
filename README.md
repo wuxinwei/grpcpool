@@ -1,6 +1,9 @@
 # GrpcPool
 It's a simple implement of grpc connection pool, based on buffered channel.
 
+# Requirement
+- Go 1.9+
+
 # Usage
 
 ```go
