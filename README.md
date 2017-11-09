@@ -11,7 +11,7 @@ import "github.com/wuxinwei/grpcpool"
 
 // create a grpc pool
 sa := ServiceArg
-Create(grpc.Dial, 3, 10, sa)
+Create(grpc.Dial, 5, 10, sa)
 
 // got a connection from pool, and create a grpc client
 conn, _ := grpcpool.Get()

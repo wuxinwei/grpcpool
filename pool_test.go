@@ -91,4 +91,5 @@ func TestGetAndBack(t *testing.T) {
 	if !assert.EqualValues(runtime.NumCPU()*2, Len(context.Background(), sa.Service), "max idle connection") {
 		t.Failed()
 	}
+	Close(context.Background())
 }

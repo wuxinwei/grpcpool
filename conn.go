@@ -50,3 +50,7 @@ func (c *connPool) putBack(conn *grpc.ClientConn) error {
 func (c *connPool) len() int {
 	return len(c.conns)
 }
+
+func (c *connPool) close() {
+	close(c.conns)
+}

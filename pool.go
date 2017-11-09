@@ -69,3 +69,19 @@ func Len(ctx context.Context, service string) int {
 	}
 	return 0
 }
+
+func Close(ctx context.Context) {
+	pool.Range(func(key, value interface{}) bool {
+		connPool, ok := value.(*connPool)
+		if !ok {
+			return ok
+		}
+		connPool.close()
+		for conn := range connPool.conns {
+			if err := conn.Close(); err != nil {
+				return false
+			}
+		}
+		return true
+	})
+}
