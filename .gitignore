@@ -22,3 +22,4 @@
 *.iml
 out
 gen
+/vendor

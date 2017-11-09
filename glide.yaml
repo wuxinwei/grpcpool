@@ -1,0 +1,7 @@
+package: github.com/wuxinwei/grpcpool
+import:
+- package: google.golang.org/grpc
+testImport:
+- package: github.com/stretchr/testify
+  subpackages:
+  - assert
