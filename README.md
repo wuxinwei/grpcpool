@@ -1,7 +1,7 @@
 # gRPC Connection Pool
 [![Build Status](https://travis-ci.org/wuxinwei/grpcpool.svg?branch=v1.0.2)](https://travis-ci.org/wuxinwei/grpcpool)
 [![Go Report Card](https://goreportcard.com/badge/github.com/wuxinwei/grpcpool)](https://goreportcard.com/report/github.com/wuxinwei/grpcpool)
-
+[![codecov](https://codecov.io/gh/wuxinwei/grpcpool/branch/master/graph/badge.svg)](https://codecov.io/gh/wuxinwei/grpcpool)
 
 It's a simple implement of grpc connection pool, based on buffered channel.
 
