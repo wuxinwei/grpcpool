@@ -9,4 +9,6 @@ script:
   - glide install
   - glide up
   - go version
-  - go test -v
+  - go test -v -race -coverprofile=coverage.txt -covermode=atomic
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
