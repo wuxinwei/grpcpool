@@ -1,5 +1,5 @@
 # gRPC Connection Pool
-[![Actions Status](https://github.com/wuxinwei/grpcpool/workflows/build/badge.svg)](https://github.com/wuxinwei/grppool/actions)
+[![Actions Status](https://github.com/wuxinwei/grpcpool/workflows/build/badge.svg)](https://github.com/wuxinwei/grpcpool/actions)
 [![Go Report Card](https://goreportcard.com/badge/github.com/wuxinwei/grpcpool)](https://goreportcard.com/report/github.com/wuxinwei/grpcpool)
 [![codecov](https://codecov.io/gh/wuxinwei/grpcpool/branch/master/graph/badge.svg)](https://codecov.io/gh/wuxinwei/grpcpool)
 
